@@ -1,0 +1,18 @@
+1. На странице https://www.tinkoff.ru/ выбрать массив всех элементов второго меню (Кред карты, ***, платежи)
+//div[@class='header__9V1so header__3rtwn']
+
+2. Обратиться к последнему из них
+//div[@class='header__9V1so header__3rtwn']/div[last()]
+
+3. Обратиться ко второму
+//div[@class='header__9V1so header__3rtwn']/div[2]
+
+4. Найти отцовский элемент второго
+//div[@class='header__9V1so header__3rtwn']/div[2]/parent::*
+//div[@class='header__9V1so header__3rtwn']/div[2]/parent::div
+
+5. Найти все ссылки в родителях второго элемента
+//div[@class='header__9V1so header__3rtwn']/div[2]/parent::div//a
+
+6.Для проверки корректности xpath в firefox нажимаем f12, переходим в консоль и пишем $x(“ **** “), где *** -  наше выражение.
+Таким образом можно получить возможность обращения к объекту не зная его точного расположения.
